@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Teórico</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="contimg">
+        <!-- <img class="imghd" src="img/florenciapg.png" alt="Florencia"> -->
+        <h1 id="title">Marco Teórico</h1>
+    </div> <br>
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Ventana Principal de ArcMap
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        ArcMap representa la información geográfica como una colección de capas y otros elementos en una
+                        vista de mapa. <br>
+                        La ventana principal de ArcMap muestra una Barra de menús, y debajo de esta se localizan las
+                        Barras de herramientas en donde se encuentran las funciones más utilizadas en ArcMap.
+                        A la derecha de la ventana se encuentran los paneles: Results, ArcToolbox, Catalog, Search,
+                        entre otros. <br>
+                        Por otra parte, a la izquierda se encuentra la Tabla de contenidos, en donde estarán localizadas
+                        todas las capas a utilizar. <br>
+                        ArcMap cuenta con dos vistas principales, la Vista de datos y la Vista de diseño y cada una de
+                        ellas nos permite interactuar con el mapa de una manera en específico.
+                        ‎En la Vista de datos, el mapa es el marco de datos. Se presenta como una ventana geográfica en
+                        la que se muestran y utilizan capas de mapa. Dentro de este marco de datos, se trabaja con
+                        información SIG presentada a través de capas utilizando coordenadas geográficas (del mundo
+                        real). <br>
+                        ‎La Vista de diseño se utiliza para diseñar y crear un mapa para imprimir, exportar o publicar.
+                        Se pueden agregar elementos al mapa y obtener así una vista previa de cómo se verá este antes de
+                        exportarlo o imprimirlo. <br>
+                        <img class="imggd" src="img/ventanapral.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Georeferenciación con puntos de control
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                            Existe información ráster la cual no está relacionada con un sistema de referencia, como
+                            lo son las imágenes aéreas. <br>
+                            Para asociar una imagen a un sistema de coordenadas se debe realizar el proceso de
+                            georreferenciación, el cual se explicará a continuación. <br>
+                            Ya que se tenga abierta la aplicación ArcMap, abriremos la imagen aérea haciendo clic en el
+                            botón Add Data que se encuentra en la barra de herramientas. <br> <br>
+                            <img class="imgs" src="img/adddata.png" alt=""> <br> <br>
+                            Se selecciona el archivo a georreferenciar y posteriormente a través de las cartas
+                            topográficas se identificarán puntos de control utilizando coordenadas en los ejes X y Y.
+                            Para esto haremos uso de la herramienta Georeferencing ejecutándola desde la opción
+                            Customize > Toolbars. <br> <br>
+                            <img class="imgs" src="img/geo.png" alt=""> <br> <br>
+                            Posteriormente teniendo la imagen seleccionada agregaremos los puntos de control. <br>
+                            *Nota: Si la imagen no se puede visualizar daremos clic derecho en la imagen y después en
+                            Fit To Display. <br>
+                            A continuación daremos clic en el ícono Add Control Points para poder indicar los puntos
+                            conocidos; esta herramienta ajusta la imagen espacialmente a través de puntos comprendidos. <br> <br>
+                            <img class="imgs" src="img/cp.png" alt=""> <br> <br>
+                            El cursor se tornará de color verde, ubicaremos en donde colocaremos el punto y daremos clic
+                            derecho para seleccionar Input X y Y para ingresar las coordenadas XY. Este mismo proceso se
+                            realizará para el número de puntos que se deseen añadir. <br>
+                            <img class="imggd" src="img/conpuntos.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Georeferenciación sin puntos de control
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>
+                            Para poder georreferenciar sin coordenadas específicas de los puntos de control se hará uso
+                            de elementos de referencia como vías, edificaciones, puntos hidrantes, etc.
+                            Para ello se dará clic en la imagen para indicar el punto inicial y un segundo clic en el
+                            punto de la realidad. Se indicarán los puntos necesarios en distintas áreas con el mismo
+                            procedimiento para que las capas se ajusten correctamente. <br>
+                            Se recomienda indicar estos puntos de manera equitativa en toda la imagen. <br> <br>
+                            <img class="imggd" src="img/sp.png" alt=""> <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Generación de entidades vectoriales
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>1. Creación de shapefiles</strong>
+                        <p>
+                            Para la creación de ShapeFiles, se hará uso de la aplicación ArcCatalog, posteriormente del
+                            lado izquierdo se encuentra el panel llamado Catalog Tree y dentro de este se seleccionará
+                            una ubicación en donde se ubicaran los archivos.  <br> <br>
+                            <img class="imgs" src="img/catalog.png" alt=""> <br> <br>
+                            A continuación se dará clic en el menú File > New > Shapefile. Enseguida en la ventana se
+                            ingresará el nombre del shapefile <br>
+                            Luego en Feature Type se dará clic en la flecha para desplegar lista y se seleccionará el
+                            tipo de capa. <br>
+                            Y por último en Spatial Reference se indicará el sistema de referencia, para ello se dará
+                            clic en Edit y se definirá el sistema de coordenadas del shapefile seleccionando o
+                            importando un sistema de coordenadas y una vez seleccionado se dará clic en Aceptar. <br> 
+                            Y el nuevo shapefile aparecerá dentro de la carpeta seleccionada. <br><br>
+                            <img class="imgsm" src="img/catalog_2.png" alt=""> <br>
+
+                        </p>
+                        <strong>2. Edición de shapefiles</strong>
+                        <p>
+                            Este proceso consiste en cartografiar los elementos en una imagen. <br>
+                            Para la edición de los shapefiles se hará uso nuevamente de ArcMap. Primeramente se deben
+                            añadir a la Tabla de Contenidos los shapefiles creados, y luego se activará la herramienta
+                            Editor, la cual se ejecutará desde la opción Customize > Toolbars. <br>
+                            Después en Editor > Start editing se activará la edición en el espacio de trabajo. <br> <br>
+                            <img class="imgs" src="img/editor.png" alt=""> <br> <br>
+                            Enseguida en el panel Create Features se encontrarán las capas de los shapefiles y en la
+                            parte inferior en Construction Tools se seleccionará la opción que se editará. <br> <br>
+                            <img class="imgsm" src="img/editor_2.png" alt=""> <br> <br>
+                            Al haber realizado los cambios necesarios se finalizará la edición, para ello se dirige a
+                            Editor > Stop editing y se guardarán las modificaciones.
+                        </p>
+                        <strong>3. Trabajo con puntos</strong>
+                        <p>
+                            Teniendo abierto el panel Create Features, se seleccionará en Construction Tools la
+                            herramienta Point. Nos ubicamos sobre las residencias que queremos marcar y al hacer clic se
+                            fijará el punto. <br>
+                            Así mismo se pueden ingresar dando clic derecho en la edificación correspondiente e ingresar
+                            las coordenadas en diferentes formatos como metros, grados decimales, MGRS, UTM, etc. <br> <br>
+                            <img class="imgsm" src="img/point.png" alt=""> <br>
+                        </p>
+                        <strong>4. Trabajo con líneas</strong>
+                        <p>
+                            Para digitalizar líneas se selecciona la capa necesaria en el panel Create Features. Para
+                            trazar la línea se señala con un clic el punto inicial y luego se continúa indicando punto
+                            tras punto hasta completar una sección. Para finalizar la línea se hace doble clic en el
+                            último vértice. <br> <br>
+                            <img class="imgsm" src="img/line.png" alt=""> <br>
+                        </p>
+                        <strong>5. Trabajando con polígonos</strong>
+                        <p>
+                            Para trabajar con polígonos en el panel de Create Features se selecciona la capa y se
+                            selecciona el Polygon en el Construction Tools, se marca el primer vértice y luego se
+                            continúa dibujando todo el perímetro, para finalizar igualmente se da doble clic en el
+                            último vértice. <br> <br>
+                            <img class="imgsm" src="img/polygon.png" alt=""> <br>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Administración de tablas
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>1. Creando nuevos campos</strong>
+                        <p>
+                            Para la creación de nuevos campos, se dará clic derecho sobre la tabla o en la capa de la
+                            tabla de contenido y enseguida se dará clic en Open Attribute Table. <br>
+                            Daremos clic en el botón de Table Options de la ventana de la tabla. <br>
+                            Posteriormente se dará clic en Add Field, y enseguida se escribe el nombre del campo. <br>
+                            Seguidamente se dará clic en la flecha Tipo y se selecciona el tipo de campo y daremos clic
+                            en Aceptar. <br> <br>
+                            <img class="imgs" src="img/tbl.png" alt=""> <br>
+                        </p>
+                        <strong>2. Ingreso de información</strong>
+                        <p>
+                            Para agregar información dentro de un campo, es necesario estar en modo de edición, después
+                            abrir la tabla de atributos y de esta manera se podrán ingresar directamente los valores a
+                            un registro dentro de un campo.
+                        </p>
+                        <strong>3. Cálculos</strong>
+                        <br>
+                        <h9>a. Área, perímetro y longitud</h9>
+                        <p>
+                            Para calcular el área y perímetro, se dará clic derecho sobre la capa seleccionada y
+                            abriremos la Tabla de Atributos. <br>
+                            Luego al dar clic en Add field y asignaremos en el Nombre “Área” o “Perímetro” y en Type
+                            seleccionaremos Double y aceptamos. <br>
+                            Ahora, dando clic derecho en el encabezado del campo requerido (Área) se seleccionará la
+                            herramienta Calculate Geometry.
+                            Después se elige la propiedad geométrica (Área), el sistema de coordenadas y las unidades a
+                            utilizar. Para calcular el perímetro se repite el mismo proceso, pero en este caso se
+                            selecciona la propiedad Perimeter. <br> <br>
+                            <img class="imgs" src="img/calculo.png" alt=""> <br>
+                        </p>
+                        <br>
+                        <h9>b. Cálculo de coordenadas XY</h9>
+                        <p>
+                            Nos dirigimos al panel ArcToolbox > Data Management Tools > Features en la sección de Input
+                            Features, se selecciona primeramente la capa y daremos clic en Aceptar, después se abrirá la
+                            tabla de atributos en donde se podrá ver que incrementaron los campos con los valores XY de
+                            las coordenadas. <br><br>
+                            <img class="imgsq" src="img/xy.png" alt=""> <br>
+                        </p>
+                        <br>
+                        <h9>c. Operaciones</h9>
+                        <p>
+                            Se pueden realizar operaciones simples y complejas, tanto cadenas de texto como operaciones
+                            matemáticas (sumas, restas, divisiones y multiplicaciones, incluyendo paréntesis). <br>
+                            Para ello nos dirigimos a la Tabla de atributos, damos clic derecho y seleccionamos
+                            Statistics, después hacemos clic derecho sobre el nombre del campo creado y seleccionamos
+                            Field Calculator e ingresamos la expresión. <br> <br>
+                            <img class="imgs" src="img/area.png" alt=""> <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100px; margin: 50px auto;">
+        <a href="./index.html">
+            <button type="button" class="btn btn-warning btn-lg">Regresar</button>
+        </a>
+    </div>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

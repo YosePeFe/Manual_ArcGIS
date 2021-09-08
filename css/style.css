@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+/* * {
+    font-family: 'Montserrat', sans-serif;    
+} */
+
+.imghd {
+    width: 80%;
+    opacity: .6;
+    text-align: center;
+    color: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: grayscale(30%);
+}
+
+.titlehd {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: 700;
+    font-size: 15vh;
+    font-family: 'Urbanist', sans-serif;
+    text-shadow: 3px 3px 2px white;
+}
+
+.btnhd {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Urbanist', sans-serif;
+}
+
+#titler {
+    text-align: center;
+    font-weight: 600;
+    color: #f68741;
+    font-family: 'Urbanist', sans-serif;
+}
+
+
+#title {
+    text-align: center;
+    font-weight: 600;
+    color: #f68741;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 100px;
+}
+
+.list-group .accordion-button{
+    font-size: medium;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.parrafo {
+    font-size: larger;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgb(253, 190, 161), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+#cardlink {
+    text-decoration: none;
+    color: black;
+
+}
+
+.card-img-top {
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-md-2 {
+    background-color: rgb(255, 196, 196);
+    height: 110px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+}
+
+#list {
+    max-width: 50%;
+}
+
+.modal-body {
+    font-size: 25px;
+}
+
+.modal-title {
+    font-size: x-large;
+}
+
+.imggd {
+    max-width: 70%;
+}
+
+.imgs {
+    max-width: 60%;
+}
+
+.imgsm {
+    max-width: 30%;
+}
+
+.imgsq {
+    max-width: 50%;
+}
+
+.accordion-body {
+    font-size: large;
+    text-align: center;
+}
